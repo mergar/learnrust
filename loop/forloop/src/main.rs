@@ -28,4 +28,8 @@ fn main() {
 	}
 
 
+	for i in 0..collection.len() {
+		println!("{}",&i);
+	}
+
 }
