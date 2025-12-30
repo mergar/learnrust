@@ -22,6 +22,18 @@ fn main() {
 		println!("{}",&i);
 	}
 
+	// так не получится, тк все еще только по чтению, хотя let mut есть
+//	for i in &collection {
+//		collection[2]="ZX SPECTRUM 48";		// в этом цицле уже не влияет тк данные уже проиничены, но повлияет на следующий
+//		println!("{}",&i);
+//	}
+
+// тут чтение и запись, но reassign почему-то (?)
+//	for i in &mut collection {
+//		collection[2]="ZX SPECTRUM 48";		// в этом цицле уже не влияет тк данные уже проиничены, но повлияет на следующий
+//		println!("{}",&i);
+//	}
+
 	println!("\nLoop2\n");
 	for i in &collection {
 		println!("{}",&i);
